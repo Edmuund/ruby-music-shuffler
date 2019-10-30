@@ -3,7 +3,7 @@ Your device does not have a shuffle mode? This script will randomly order the so
 
 ## What it can do
 ![](https://i.imgur.com/dcDMN6J.png)
-1. Shuffle (assigns a random order number from the total number of songs in the folder)
+1. Shuffle (assigns a random order number between 1 and the total number of songs in the folder)
 2. Reshuffle (same as Shuffle but first removes any previously assigned order numbers)
 3. Unshuffle (removes any previously assigned order numbers)
 4. Export playlist (exports song names to `Playlist.txt` in the same folder
