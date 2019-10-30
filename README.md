@@ -15,3 +15,5 @@ Note: it supports only `.mp3` and `.wav` files
 2. Place `shuffler.rb` in the folder with the songs
 3. Run `ruby path_to_folder/shuffler.rb` in console
 4. Type the number of the operation and press `ENTER`
+
+Alternatively you can open `shuffler.rb` with your terminal application. You can set it to be opened like that by default.
