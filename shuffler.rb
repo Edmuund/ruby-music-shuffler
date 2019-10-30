@@ -12,15 +12,21 @@ class Shuffler
     songs.each do |song|
       position = positions.delete(positions.sample)
       name     = "#{position}. #{song}"
-      File.rename(__dir__ + "/#{song}", __dir__ + "/#{name}")
+      rename_file(song, name)
     end
   end
 
   def unshuffle
     songs.each do |song|
       name = song.gsub(/\A\d+. /, "")
-      File.rename(__dir__ + "/#{song}", __dir__ + "/#{name}")
+      rename_file(song, name)
     end
+  end
+
+  private
+
+  def rename_file(old_name, new_name)
+    File.rename(__dir__ + "/#{old_name}", __dir__ + "/#{new_name}")
   end
 end
 
