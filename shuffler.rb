@@ -43,7 +43,7 @@ loop do
   puts "| 0. exit                 |"
   puts "==========================="
 
-  print "Enter operation: "
+  print "Enter operation (0-4): "
   choice = gets.chomp
 
   case choice
